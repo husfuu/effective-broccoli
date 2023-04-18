@@ -62,6 +62,7 @@ const updateUser = async (req: Request, res: Response, next: NextFunction) => {
 
 const getAllUser = async (req: Request, res: Response, next: NextFunction) => {
     try {
+        console.log('masuk pak eokkkkkkkk')
         const result = [
             {
                 name: "husfuu",
@@ -84,7 +85,7 @@ const getAllUser = async (req: Request, res: Response, next: NextFunction) => {
             status: 200,
             message: "Get all users successfully",
             data: result
-        })
+        });
     } catch (error) {
         next(error)
     }
